@@ -30,10 +30,37 @@ user_pw = 'sf1234'
 email = "jerry@korea.com"
 age = 35
 
-print("아이디 :", user_id)
+#print("아이디 :", user_id)
+print(f'아이디 : {user_id}')
 print("비밀번호 :", user_pw)
 print("이메일 :", email)
 print("나이 :", age)
+
+#소수점 처리하기
+# int, float
+n1 = 10
+n2 = 3
+
+div = n1 / n2
+print(type(n1))
+print(type(div))
+
+print(f'결과값: {div : .2f}')
+print(f'결과값: {round(div, 2)}')
+
+# 반올림 함수 - round(숫자, 자리수)
+print(round(1.647, 1))
+
+
+
+
+
+
+
+
+
+
+
 
 
 

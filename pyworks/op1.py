@@ -23,7 +23,15 @@ print(n1 ** n2) #10000 거듭제곱
 print(2 ** 3)
 
 
-# 실습
+# 실습 - 빵 30, 사람 - 4
+bread = 30
+people = 4
+
+몫 = bread // people
+나머지 = bread % people
+
+print("빵의 개수: " + str(몫))
+print("남은 빵의 개수: " + str(나머지))
 
 
 
