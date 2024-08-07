@@ -8,7 +8,7 @@ dic = {
 
 print("★ 컴퓨터 사전 ★")
 try:
-    # 에러가 날수 있는 곳(실행문)에 위에 위치
+    # 에러가 날 수 있는 곳(실행문)에 위에 위치
     word = input("검색할 단어를 입력하세요: ")
     print(f'{word} : {dic[word]}') # key로 검색
 except KeyError:
