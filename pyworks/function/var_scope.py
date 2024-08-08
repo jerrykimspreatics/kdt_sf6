@@ -4,7 +4,6 @@
 
 # 상품 가격 = 단위당 가격 * 수량
 def get_price():
-    # global quantity
     price = 4000 * quantity
     return price
 def one_up():
