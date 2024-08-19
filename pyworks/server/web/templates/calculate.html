@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>서버에서 데이터 받기</title>
+    <style>
+        .error{color: red;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/season">계절(season)</a>
+            <a href="/loop">반복/조건</a>
+            <a href="/calc">짝수/홀수 판정</a>
+        </nav>
+    </header>
+    <section>
+        <h2>짝수/홀수 판정</h2>
+        <form action="" method="POST">
+        <!-- name속성은 server로 전달됨-->
+        <!-- 예외(오류) 처리-->
+            {% if err_msg %}
+                <p class="error">{{ err_msg }}</p>
+            {% endif %}
+            <label>숫자 입력</label>
+            <input type="text" name="num" placeholder="정수를 입력해주세요">
+            <input type="submit" value="전송">
+        </form>
+    </section>
+</body>
+</html>

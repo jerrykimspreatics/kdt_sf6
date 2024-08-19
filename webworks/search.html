@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>검색 폼...</title>
+</head>
+<body>
+  <h2>검색 폼</h2>
+  <!-- form 태그: 폼 내부의 요소를 서버로 전송함  -->
+   <!-- GET: 주소표시줄에 서버 요청 내용이 보임,
+        POST: 주소표시줄에 노출이 안됨(보안을 요하는 경우)
+   -->
+  <form action="/search" method="GET">
+    <!-- input text: 한 줄 입력 -->
+    <input type="text" id="query" name="query" placeholder="검색어 입력">
+    <!-- 전송 버튼: 서버로 전송함 -->
+    <input type="submit" value="검색">
+  </form>
+</body>
+</html>
