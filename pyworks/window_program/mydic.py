@@ -2,9 +2,13 @@
 from tkinter import *
 
 def click():
-    word = entry.get()
-    # dic[word]  #dic[key] -> value
-    text.insert(END, dic[word])  #END - 최종입력지점
+    try:
+        word = entry.get()
+        text.delete(0.0, END) #앞0-행, 뒤0-열
+        definition = dic[word]
+    except KeyError:
+        definition = "단어를 찾을 수 없습니다."
+    text.insert(END, definition)
 
 dic = {
     "비트" : "0이나 1의 값을 가지는 컴퓨터 데이터의 최소 단위",
