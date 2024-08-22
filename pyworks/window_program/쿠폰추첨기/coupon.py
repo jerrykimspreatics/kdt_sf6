@@ -18,7 +18,7 @@ def click():
     '''
     # set() 자료구조 구현
     winner = set()
-    while len(winner) < 3:
+    while len(winner) < 4:
         name = random.choice(namelist)
         winner.add(name)
 
